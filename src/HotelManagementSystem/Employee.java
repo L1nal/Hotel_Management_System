@@ -48,4 +48,10 @@ public class Employee {
         this.job = job;
     }
 
+    public void print(){
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Salary: " + salary);
+        System.out.println("Job: " + job);
+    }
 }
