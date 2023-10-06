@@ -1,5 +1,7 @@
 package HotelManagementSystem;
 
+import java.util.ArrayList;
+
 public class Room {
     int id;
     int floor;
@@ -8,15 +10,15 @@ public class Room {
     String description;
     double price;
     boolean available;
+    ArrayList<String> reservedDates;
 
-    public Room(int id, int floor, int capacity, String type, String description, double price, boolean available) {
+    public Room(int id, int floor, int capacity, String type, String description, double price) {
         this.id = id;
         this.floor = floor;
         this.capacity = capacity;
         this.type = type;
         this.description = description;
         this.price = price;
-        this.available = available;
     }
 
     public Room() {
@@ -70,14 +72,5 @@ public class Room {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
-
 
 }
