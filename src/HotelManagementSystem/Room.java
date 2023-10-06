@@ -1,5 +1,7 @@
 package HotelManagementSystem;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Room {
@@ -19,10 +21,11 @@ public class Room {
         this.type = type;
         this.description = description;
         this.price = price;
+        reservedDates = new ArrayList<>();
     }
 
     public Room() {
-        //default constructor
+        reservedDates = new ArrayList<>();
     }
 
     public int getId() {
@@ -71,6 +74,25 @@ public class Room {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+    public void Reserve(LocalDate startDate, LocalDate finishDate){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYY-MM_DD");
+        for(LocalDate date = startDate;date.isBefore(finishDate);date = date.plusDays(1)){
+            String d = date.format(formatter);
+            reservedDates.add(d);
+        }
+    }
+    public boolean isReserved(LocalDate startDate, LocalDate finishDate){
+        boolean b= false;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYY-MM_DD");
+        for(LocalDate date = startDate;date.isBefore(finishDate);date = date.plusDays(1)){
+            String d = date.format(formatter);
+            if (reservedDates.contains(d)){
+                b = true;
+                break;
+            }
+        }
+        return b;
     }
 
 }
