@@ -2,10 +2,10 @@ package HotelManagementSystem;
 
 public class Guest {
 
-    int id;
-    String name;
-    String email;
-    int discount;
+    private int id;
+    private String name;
+    private String email;
+    private int discount;
 
     public Guest(int id, String name, String email, int discount) {
         this.id = id;

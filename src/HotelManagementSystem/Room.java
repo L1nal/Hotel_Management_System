@@ -5,14 +5,14 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Room {
-    int id;
-    int floor;
-    int capacity;
-    String type;
-    String description;
-    double price;
-    boolean available;
-    ArrayList<String> reservedDates;
+    private int id;
+    private int floor;
+    private int capacity;
+    private String type;
+    private String description;
+    private double price;
+    private boolean available;
+    private ArrayList<String> reservedDates;
 
     public Room(int id, int floor, int capacity, String type, String description, double price) {
         this.id = id;

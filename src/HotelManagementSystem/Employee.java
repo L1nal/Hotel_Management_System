@@ -2,10 +2,10 @@ package HotelManagementSystem;
 
 public class Employee {
 
-    int id;
-    String name;
-    double salary;
-    String job;
+    private int id;
+    private String name;
+    private double salary;
+    private String job;
     public Employee(int id, String name, double salary, String job) {
         this.id = id;
         this.name = name;
