@@ -20,6 +20,10 @@ public class RoomsController {
         System.out.println(" Room added successfully. ");
     }
     public static void showAllRooms(ArrayList<Room> rooms){
+        for(Room room: rooms){
+            room.print();
+            System.out.println();
+        }
 
     }
 }
