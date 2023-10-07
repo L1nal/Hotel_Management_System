@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class RoomsController {
-    public static void AddNewRoom(ArrayList<Room> rooms, Scanner scanner){
+    public static void addNewRooms(ArrayList<Room> rooms, Scanner input){
         System.out.println("Enter Floor: ");
-        int floor = scanner.nextInt();
+        int floor = input.nextInt();
         System.out.println("Enter Capacity: ");
-        int capacity = scanner.nextInt();
+        int capacity = input.nextInt();
         System.out.println("Enter Type: ");
-        String type = scanner.next();
+        String type = input.next();
         System.out.println("Enter Description: ");
-        String description = scanner.next();
+        String description = input.next();
         System.out.println("Enter Price: ");
-        double price = scanner.nextDouble();
+        double price = input.nextDouble();
         Room room = new Room(rooms.size(), floor, capacity, type, description, price);
         rooms.add(room);
         System.out.println(" Room added successfully. ");
-
-
+    }
+    public static void showAllRooms(ArrayList<Room> rooms){
 
     }
 }

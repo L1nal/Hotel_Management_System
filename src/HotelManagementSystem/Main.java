@@ -32,8 +32,12 @@ public class Main {
         int i = input.nextInt();
         switch (i){
             case 1:
-                RoomsController.AddNewRoom(rooms, input);
+                RoomsController.addNewRooms(rooms, input);
                 break;
+            case 2:
+                RoomsController.showAllRooms(rooms);
+                break;
+
         }
     }
 }
