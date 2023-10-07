@@ -18,10 +18,13 @@ public class RoomsController {
         Room room = new Room(rooms.size(), floor, capacity, type, description, price);
         rooms.add(room);
         System.out.println(" Room added successfully. ");
+        System.out.println();
     }
     public static void showAllRooms(ArrayList<Room> rooms){
         for(Room room: rooms){
+            System.out.println("-----------------------------------");
             room.print();
+            System.out.println("-----------------------------------");
             System.out.println();
         }
 

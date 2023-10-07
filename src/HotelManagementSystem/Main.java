@@ -29,6 +29,8 @@ public class Main {
             System.out.println(" 11. Get reservation by ID.");
             System.out.println(" 12. Edit reservation.");
             System.out.println(" 13. Quit.");
+            System.out.println();
+            System.out.print("Enter your option: ");
 
             Scanner input = new Scanner(System.in);
             i = input.nextInt();
