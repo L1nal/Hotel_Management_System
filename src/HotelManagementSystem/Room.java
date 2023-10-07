@@ -94,5 +94,13 @@ public class Room {
         }
         return b;
     }
+    public void print(){
+        System.out.println("ID: " + id);
+        System.out.println("Floor " + floor);
+        System.out.println("Capacity " + capacity);
+        System.out.println("Type: " + type);
+        System.out.println("Description: " + description);
+        System.out.println("Price: " + price);
+    }
 
 }
