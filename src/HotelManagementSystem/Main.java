@@ -41,6 +41,9 @@ public class Main {
                 case 2:
                     RoomsController.showAllRooms(rooms);
                     break;
+                case 3:
+                    RoomsController.editRooms(rooms, input);
+                    break;
             }
 
         }
