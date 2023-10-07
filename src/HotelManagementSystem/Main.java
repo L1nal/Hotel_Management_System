@@ -1,6 +1,7 @@
 package HotelManagementSystem;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     private static ArrayList<Room> rooms;
@@ -26,5 +27,13 @@ public class Main {
         System.out.println(" 10. Get reservation by Guest Name.");
         System.out.println(" 11. Get reservation by ID.");
         System.out.println(" 12. Edit reservation.");
+
+        Scanner input = new Scanner(System.in);
+        int i = input.nextInt();
+        switch (i){
+            case 1:
+                RoomsController.AddNewRoom(rooms, input);
+                break;
+        }
     }
 }
