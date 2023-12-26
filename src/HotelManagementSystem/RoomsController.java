@@ -57,7 +57,7 @@ public class RoomsController {
         String description = input.next();
         if (description.equals("-1")) description = room.getDescription();
 
-        System.out.println("Enter room price: \n-1 to keep it");
+        System.out.println("Enter room price (Double): \n-1 to keep it");
         double price = input.nextDouble();
         if (price == -1) price = room.getPrice();
 
